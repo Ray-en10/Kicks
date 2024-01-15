@@ -1,0 +1,108 @@
+.navad {
+  background-color: cadetblue;
+  width: 100rem;
+  height: 6.85rem;
+  margin-left: -1rem;
+  z-index: 1;
+}
+
+.navad>h1 {
+  margin-top: 2.5rem;
+  margin-left: 2rem;
+  color: rgb(0, 0, 0);
+  font-size: 22px;
+  font-weight: 100;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.Contaddprod {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.donno2 {
+  margin: 1rem 0rem 0rem -80rem;
+  text-align: center;
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 8px;
+  width: 50rem;
+}
+
+.donno2 h2 {
+  text-align: center;
+  margin: -1rem 0 5rem 0;
+  color: #333;
+  font-size: 35px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.user-box {
+  position: relative;
+  margin-bottom: 20px;
+  
+}
+
+.user-box input {
+
+  padding: 10px;
+  font-size: 16px;
+  color: #333;
+  border: none;
+  border-bottom: 1px solid #ccc;
+  background: transparent;
+  outline: none;
+  width: 42rem;
+  margin-bottom: 1rem;
+}
+
+.user-box label {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 10px;
+  font-size: 16px;
+  color: #333;
+
+  pointer-events: none;
+  transition: 0.5s;
+}
+
+.user-box input:focus~label,
+.user-box input:valid~label {
+  top: -20px;
+  font-size: 16px;
+  color: #020202;
+}
+
+
+#pet-select {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  color: #333;
+  border: none;
+  border-bottom: 1px solid #ccc;
+  background: transparent;
+  outline: none;
+  margin-bottom: 20px;
+}
+
+.subbut[type="submit"] {
+  width: 100%;
+  padding: 12px;
+  font-size: 16px;
+  width: 20rem;
+  color: #fff;
+  background-color: cadetblue;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.subbut[type="submit"]:hover {
+  background-color: #8a8c8d;
+}

@@ -1,0 +1,85 @@
+.nav {
+    width: 100%;
+    height: 60px;
+    position: absolute;
+    line-height: 65px;
+    text-align: center;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 520;
+}
+
+.nav div.logo {
+    float: left;
+    width: auto;
+    height: auto;
+    padding-left: 3rem;
+}
+
+.nav div.main_list {
+    float: right;
+    margin-right: 35rem;
+    margin-top: 1.5rem;
+}
+
+.nav div.main_list ul {
+    width: 100%;
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav div.main_list ul li {
+    width: auto;
+    padding: 0;
+    padding-right: 4rem;
+}
+
+.nav div.main_list ul li a {
+    text-decoration: none;
+    color: #000000;
+    font-size: 1.5rem;
+}
+
+.nav div.main_list ul li a:hover {
+    color: rgb(95, 158, 160);
+}
+.button {
+    background-color: #ffffff00;
+    color: #050505;
+    width: 9em;
+    height: 3.2em;
+    margin-top: 2rem;
+    margin-right: 3rem;
+    border: #000000 0.2em solid;
+    border-radius: 11px;
+    text-align: right;
+    transition: all 0.6s ease;
+    float: right;
+  }
+  
+  .button:hover {
+    background-color:rgba(95, 158, 160, 0.473);
+    cursor: pointer;
+  }
+  
+  .button svg {
+    width: 1.6em;
+    margin: -0.2em 0.8em 1em;
+    position: absolute;
+    display: flex;
+    transition: all 0.6s ease;
+  }
+  
+  .button:hover svg {
+    transform: translateX(5px);
+  }
+  
+  .text {
+    margin: 0 1.5em
+  }
+  .logo {
+    width: 250px;
+    height: auto;
+    margin: -0.3rem 0rem 0rem -1rem;
+}

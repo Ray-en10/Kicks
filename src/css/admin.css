@@ -1,0 +1,248 @@
+@charset "UTF-8";
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:300,400,700,400italic);
+@import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css);
+
+
+body {
+  background: #f1f2f7;
+  font-family: "Open Sans", arial, sans-serif;
+  color: darkslategray;
+}
+
+body.login {
+  background-color: white;
+  max-width: 500px;
+  margin: 10vh auto;
+  padding: 1em;
+  height: auto;
+}
+
+.warn {
+  color: red;
+}
+
+/* header */
+header[role="banner"] {
+  background: #2a3542;
+  box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.15);
+}
+header[role="banner"] h1 {
+  margin: 0;
+  font-weight: 300;
+  padding: 1rem;
+  color: white;
+}
+header[role="banner"] h1:before {
+  content: "\f248";
+  font-family: FontAwesome;
+  padding-right: 0.6em;
+  color: white;
+}
+header[role="banner"] .utilities {
+  width: 100%;
+  background: slategray;
+  color: #ddd;
+  margin-top: -1.5rem;
+}
+header[role="banner"] .utilities li {
+  border-bottom: solid 1px rgba(255, 255, 255, 0.2);
+  
+}
+header[role="banner"] .utilities li a {
+  padding: 0.7em;
+  display: block;
+  font-size: 20px;
+}
+
+/* header */
+.utilities a:before {
+  content: "\f248";
+  font-family: FontAwesome;
+  padding-right: 0.6em;
+ 
+}
+
+.logout a:before {
+  content: "";
+
+}
+
+.users a:before {
+  content: "";
+}
+
+nav[role="navigation"] {
+  background: #2a3542;
+  color: #ddd;
+  /* icons */
+}
+nav[role="navigation"] li {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+nav[role="navigation"] li a {
+  color: #ddd;
+  text-decoration: none;
+  display: block;
+  padding: 0.7em;
+}
+nav[role="navigation"] li a:hover {
+  background-color: rgba(255, 255, 255, 0.05);
+}
+nav[role="navigation"] li a:before {
+  content: "\f248";
+  font-family: FontAwesome;
+  padding-right: 0.6em;
+}
+nav[role="navigation"] .dashboard a:before {
+  content: "";
+}
+nav[role="navigation"] .write a:before {
+  content: "";
+}
+nav[role="navigation"] .edit a:before {
+  content: "";
+}
+nav[role="navigation"] .comments a:before {
+  content: "";
+}
+nav[role="navigation"] .users a:before {
+  content: "";
+}
+
+
+
+/* panels */
+.admspace {
+  text-align: center;
+  margin: 1rem;
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  color: #08322e;
+}
+
+.panel {
+  background-color: white;
+  border-radius: 0.3rem;
+}
+.panel>h2,
+.panel>ul {
+  color: #08322e;
+  margin: 1rem;
+}
+
+/* typography */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+/* lists */
+ul,
+li {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+
+
+/* tables */
+table {
+  border-collapse: collapse;
+  width: 96%;
+  margin: 3%;
+}
+
+th {
+  text-align: left;
+  font-size: 14px;
+  line-height: 50px;
+  text-transform: uppercase;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  padding: 0 10px;
+  padding-bottom: 14px;
+  text-align: center;
+}
+
+tbody>tr:hover {
+  background: rgba(0, 0, 0, 0.1);
+}
+
+td {
+  line-height: 50px;
+  font-weight: 300;
+  padding: 0 10px;
+  text-align: center;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+ 
+}
+/* Style for delete button */
+.conttab button {
+  padding: 8px 10px;
+  border-radius: 10px;
+  margin-left: 1rem;
+  background-color: #0c0c0c;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+
+}
+.conttab button:hover {
+  background-color: #2b84c0;
+}
+@media screen and (min-width: 600px) {
+ 
+
+  header[role="banner"] {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 99;
+    height: 75px;
+  }
+  header[role="banner"] .utilities {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: transparent;
+    color: darkslategray;
+    width: auto;
+  }
+  header[role="banner"] .utilities li {
+    display: inline-block;
+  }
+  header[role="banner"] .utilities li a {
+    padding: 0.5em 1em;
+  }
+
+  nav[role="navigation"] {
+    position: fixed;
+    width: 200px;
+    top: 75px;
+    bottom: 0px;
+    left: 0px;
+  }
+
+  main[role="main"] {
+    margin: 75px 0 40px 200px;
+  }
+  main[role="main"]:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+  .panel {
+    margin: 2% 0 0 2%;
+    float: left;
+    width: 96%;
+  }
+  .panel:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+
+
+
+}
